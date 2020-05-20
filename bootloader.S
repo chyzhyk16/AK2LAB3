@@ -19,8 +19,8 @@ bootload:
 	ldr r2, =_ram_start
 
 	loop:
-		ldrh r3, [r1], #1
-		strh r3, [r2], #1
+		ldrh r3, [r1], #2
+		strh r3, [r2], #2
 		cmp r0, r1
 		bhi loop
 
